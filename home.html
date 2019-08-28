@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/NYTlogo.png" id="NYTlogo"/>
+                <form id="submitForm" method="GET">
+                    <div id="searchBar">
+                        <div id="navButtons">
+                        <div id="dateSearchInput">
+                            <label for="dateInput">Select Date:</label>
+                            <input id="dateInput" name="dateInput" min="1851-01-01" max="2019-01-01"  type="date">
+                        </div>
+                        <div id="newsDeskSelection">
+                            <label for="sectionName">News Section:</label>
+                            <select name="sectionName" id="sectionName">
+                                <option value ="null" disabled selected>All Sections</option>
+                                <option value='Arts'>Arts</option>
+                                <option value='Automobiles'>Automobiles</option>
+                                <option value='Books'>Books</option>
+                                <option value='Briefing'>Briefing</option>
+                                <option value='Business Day'>Business Day</option>
+                                <option value='Climate'>Climate</option>
+                                <option value='Corrections'>Corrections</option>
+                                <option value='Crosswords & Games'>Crosswords & Games</option>
+                                <option value='Education'>Education</option>
+                                <option value='Fashion & Style'>Fashion & Style</option>
+                                <option value='Food'>Food</option>
+                                <option value='Health'>Health</option>
+                                <option value='Magazine'>Magazine</option>
+                                <option value='Movies'>Movies</option>
+                                <option value='Multimedia/Photos'>Multimedia/Photos</option>
+                                <option value='New York'>New York</option>
+                                <option value='Obituaries'>Obituaries</option>
+                                <option value='Opinion'>Opinion</option>
+                                <option value='Parenting'>Parenting</option>
+                                <option value='Podcasts'>Podcasts</option>
+                                <option value='Reader Center'>Reader Center</option>
+                                <option value='Real Estate'>Real Estate</option>
+                                <option value='Science'>Science</option>
+                                <option value='Smarter Living'>Smarter Living</option>
+                                <option value='Sports'>Sports</option>
+                                <option value='Style'>Style</option>
+                                <option value='Sunday Review'>Sunday Review</option>
+                                <option value='T Brand'>T Brand</option>
+                                <option value='T Magazine'>T Magazine</option>
+                                <option value='Technology'>Technology</option>
+                                <option value='The Learning Network'>The Learning Network</option>
+                                <option value='The Upshot'>The Upshot</option>
+                                <option value='The Weekly'>The Weekly</option>
+                                <option value='Theater'>Theater</option>
+                                <option value='Times Insider'>Times Insider</option>
+                                <option value='Today’s Paper'>Today’s Paper</option>
+                                <option value='Travel'>Travel</option>
+                                <option value='U.S.'>U.S.</option>
+                                <option value='Universal'>Universal</option>
+                                <option value='Video'>Video</option>
+                                <option value='Well'>Well</option>
+                                <option value='World'>World</option>
+                                <option value='Your Money'>Your Money</option>
+                            </select>
+                        </div>
+                            <button type="submit" id="submitSearchButton">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="otherButtons">
+                    <a href="favorites.html" id="favoriteLink">Favorites &#10084;</a>
+                    <button id="btnLogout">Log Out</button>
+                </div>
+            </nav>
+            <div id="displayData">
+                <span>Some data/section combinations will not return articles. </span>
+                <span id="displayDate"></span>
+            </div>
+            <div id="articleCountDisplay">
+                <span id="articleCount"></span>
+            </div>
+        </header>
+        <div id="articleDisplayContainer">
+            <div id="articleDisplay"></div>
+        </div>
+        <footer>
+            <div id="footerSpan">
+                <span>By: <a href="https://github.com/RobertMcCutchen">Brian,</a> <a href="https://github.com/justroz">Roz,</a> <a href="https://github.com/kelz877">Kelly,</a> and <a href="https://github.com/carinevic">Carine</a> &copy; 2019</span>
+            </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+        <script src="authentication.js"></script>
+        <script src="home.js"></script>
+        <script src="favButton.js"></script>
+    </body>
+</html>

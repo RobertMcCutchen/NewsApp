@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="favorites.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/NYTlogo.png" id="NYTlogo"/>
+                <div id="otherButtons">
+                    <a href="home.html" id="favoriteLink">Home<i class="fas fa-cloud"></i></a>
+                    <button id="btnLogout">Log Out</button>
+                </div>
+            </nav>
+            <div id="articleCountDisplay">
+                <span id="articleCount"></span>
+            </div>
+        </header>
+        <div id="articleDisplayContainer">
+            <div id="articleDisplay"></div>
+        </div>
+        <footer>
+            <div id="footerSpan">
+                <span>By: <a href="https://github.com/RobertMcCutchen">Brian,</a> <a href="https://github.com/justroz">Roz,</a> <a href="https://github.com/kelz877">Kelly,</a> and <a href="https://github.com/carinevic">Carine</a> &copy; 2019</span>
+            </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+        <script src="authentication.js"></script>
+        <script src="favorites.js"></script>
+        <script src="favButton.js"></script>
+    </body>
+</html>
